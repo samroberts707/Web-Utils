@@ -1,4 +1,10 @@
 <h1 align="center">Web-Utils</h1>
+<p align="center">
+  <a href="https://app.netlify.com/sites/web-utils/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/7015e548-c9e1-46e5-bdc9-2691f306fc9a/deploy-status"
+         alt="Netlify Status">
+  </a>
+</p>
 
 ## Overview :book:
 
