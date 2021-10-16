@@ -1,6 +1,8 @@
 <template>
     <nav>
-        <router-link to="/">Home</router-link>
+        <div class="nav-item top">
+            <router-link to="/">Home</router-link>
+        </div>
     </nav>
 </template>
 <script>
@@ -20,14 +22,32 @@ export default {
         left: 0;
         z-index: 10;
         overflow: hidden scroll;
-        a, p, li {
+        div.nav-item {
             display: block;
+            position: relative;
+            padding: 20px 40px;
+        }
+        a {
             position: relative;
             font-family: 'Rubik', 'Nunito', sans-serif;
             font-size: 22px;
             line-height: 26px;
             text-decoration: none;
-            padding: 20px 40px;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: 1px;
+                left: 0;
+                background-color: var(--keppel);
+                border-radius: 10px;
+                transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            &:hover::after {
+                width: 100%;
+            }
         }
     }
 </style>

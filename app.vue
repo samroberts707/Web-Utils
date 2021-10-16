@@ -19,6 +19,11 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap');
   :root {
     --text-black: #626262;
+    --blue-sapphire: #28536b;
+    --keppel: #58b09c;
+    --light-salmon: #f7a278;
+    --bright-maroon: #ba324f;
+    --princeton-orange: #e77728;
   }
   .app {
     display: block;

@@ -35,6 +35,7 @@ div.homepage {
     }
     h1 {
       text-align: center;
+      color: var(--keppel);
     }
   }
 }
