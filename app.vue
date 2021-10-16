@@ -25,6 +25,22 @@ export default {
     --bright-maroon: #ba324f;
     --princeton-orange: #e77728;
   }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FFFFFF;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue-sapphire);
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+  }
   .app {
     display: block;
     position: relative;
