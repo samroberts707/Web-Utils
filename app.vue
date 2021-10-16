@@ -17,10 +17,14 @@ export default {
 </script>
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+  @font-face {
+    font-family: Meedori-Sans;
+    src: url('/assets/fonts/Meedori-Sans/Meedori-Sans-Regular.ttf');
+  }
   :root {
     --text-black: #626262;
     --blue-sapphire: #28536b;
-    --keppel: #58b09c;
+    --cyan: #65f6e9;
     --light-salmon: #f7a278;
     --bright-maroon: #ba324f;
     --princeton-orange: #e77728;
@@ -56,6 +60,9 @@ export default {
       font-family: 'Nunito', sans-serif;
       margin: 0;
       color: var(--text-black);
+      &.brand {
+        font-family: 'Meedori-Sans', 'Nunito', sans-serif;
+      }
     }
     h1 {
       font-size: 40px;

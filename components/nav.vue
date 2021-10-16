@@ -3,9 +3,6 @@
         <div class="nav-item top">
             <router-link to="/">Home</router-link>
         </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
     </nav>
 </template>
 <script>
@@ -32,7 +29,7 @@ export default {
         }
         a {
             position: relative;
-            font-family: 'Rubik', 'Nunito', sans-serif;
+            font-family: 'Meedori-Sans', 'Nunito', sans-serif;
             font-size: 22px;
             line-height: 26px;
             text-decoration: none;
@@ -44,7 +41,7 @@ export default {
                 height: 2px;
                 bottom: 1px;
                 left: 0;
-                background-color: var(--keppel);
+                background-color: var(--cyan);
                 border-radius: 10px;
                 transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
             }

@@ -1,8 +1,8 @@
 <template>
     <div class="homepage">
         <div class="header">
-          <img class="logo" alt="Web Utils" src="https://via.placeholder.com/150" />
-          <h1>Web Utils</h1>
+          <img class="logo" alt="Web Utils" src="/images/logo.png" />
+          <h1 class="brand">Web Utils</h1>
         </div>
         <div class="intro">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada, justo id finibus sodales, lectus lacus porta ante, sit amet elementum mi est et arcu. Donec sem libero, molestie ut ipsum a, ultricies tincidunt elit. Vestibulum placerat, diam ultrices tincidunt aliquet, quam arcu venenatis tortor, et aliquam magna urna sit amet ante.</p>
@@ -35,7 +35,7 @@ div.homepage {
     }
     h1 {
       text-align: center;
-      color: var(--keppel);
+      color: var(--cyan);
     }
   }
 }
