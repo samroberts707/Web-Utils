@@ -6,34 +6,6 @@
         <div class="nav-item top">
             <router-link to="/">Home</router-link>
         </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        <div class="nav-item top">
-            <router-link to="/">Home</router-link>
-        </div>
-        
     </nav>
 </template>
 <script>
