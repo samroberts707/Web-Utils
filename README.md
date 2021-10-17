@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/public/images/logo.png"
+         alt="Web Utils">
+</p>
 <h1 align="center">Web-Utils</h1>
 <p align="center">
   <a href="https://app.netlify.com/sites/web-utils/deploys">
