@@ -10,6 +10,7 @@
     "sass": "^1.42.1"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   }
 }

@@ -23,6 +23,7 @@ export default {
   }
   :root {
     --text-black: #626262;
+    --grey: #d1d1d1;
     --blue-sapphire: #28536b;
     --cyan: #65f6e9;
     --light-salmon: #f7a278;
@@ -55,8 +56,45 @@ export default {
       padding: 0 75px;
       margin: 0 auto;
       max-width: 1200px;
+      div.component {
+        div.header {
+          display: grid;
+          position: relative;
+          align-items: center;
+          justify-items: center;
+          padding: 50px 0;
+        }
+        label {
+          display: block;
+          position: relative;
+        }
+        textarea {
+          display: block;
+          position: relative;
+          width: 100%;
+          border: 2px solid var(--grey);
+          border-radius: 5px;
+          outline: none;
+        }
+        button {
+          display: block;
+          position: relative;
+          margin: 10px 0;
+          background-color: #FFFFFF;
+          border: 2px solid var(--grey);
+          padding: 8px 21px;
+          cursor: pointer;
+          transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+          &.cyan {
+            &:hover {
+              color: var(--cyan);
+              border-color: var(--cyan);
+            }
+          }
+        }
+      }
     }
-    h1, h2, h3, h4, h5, h6, p, a, li, span, button {
+    h1, h2, h3, h4, h5, h6, p, a, li, span, button, label, textarea {
       font-family: 'Nunito', sans-serif;
       margin: 0;
       color: var(--text-black);
@@ -79,10 +117,15 @@ export default {
       line-height: 34px;
       font-weight: 300;
     }
-    p {
+    p, li, a, button, textarea {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 10px;
+      font-weight: 200;
+    }
+    label {
+      font-size: 16px;
+      line-height: 20px;
       font-weight: 200;
     }
   }
