@@ -3,35 +3,40 @@
         <div class="nav-item top">
             <router-link to="/">Home</router-link>
         </div>
+        <div class="nav-item top">
+            <p>JSON</p>
+            <router-link to="/components/json/json-to-csv">JSON to CSV</router-link>
+        </div>
     </nav>
 </template>
 <script>
 import _ from "lodash"
 export default {
     name: 'Navigation',
-    created() {
-        this.$router.options.routes.forEach(route => {
-            // We don't want top level routes such as home, we want to control the order of these.
-            if(route.path.split("/")[1] == 'components') {
-                this.rawRoutes.push({
-                    name: route.name,
-                    path: route.path,
-                    parentGroup: route.path.split("/")[2],
-                })
-            }
-        })
-    },
-    data() {
-        return {
-            rawRoutes: [],
-            groupedRoutes: []
-        }
-    },
-    mounted() {
-        // This is a lodash function -- https://lodash.com/docs/4.17.15#groupBy
-        this.groupedRoutes = _.groupBy(this.rawRoutes, route => route.parentGroup);
-        // console.log(this.groupedRoutes);
-    }
+    // TODO: Get this auto population working based on vue files in the pages directory
+    // created() {
+    //     this.$router.options.routes.forEach(route => {
+    //         // We don't want top level routes such as home, we want to control the order of these.
+    //         if(route.path.split("/")[1] == 'components') {
+    //             this.rawRoutes.push({
+    //                 name: route.name,
+    //                 path: route.path,
+    //                 parentGroup: route.path.split("/")[2],
+    //             })
+    //         }
+    //     })
+    // },
+    // data() {
+    //     return {
+    //         rawRoutes: [],
+    //         groupedRoutes: []
+    //     }
+    // },
+    // mounted() {
+    //     // This is a lodash function -- https://lodash.com/docs/4.17.15#groupBy
+    //     this.groupedRoutes = _.groupBy(this.rawRoutes, route => route.parentGroup);
+    //     console.log(this.groupedRoutes);
+    // }
 }
 </script>
 <style lang="scss" scoped>
@@ -51,12 +56,13 @@ export default {
             position: relative;
             padding: 20px 40px;
         }
-        a {
+        a, p {
             position: relative;
             font-family: 'Meedori-Sans', 'Nunito', sans-serif;
             font-size: 22px;
             line-height: 26px;
             text-decoration: none;
+            cursor: pointer;
             &::after {
                 content: '';
                 display: block;
@@ -78,3 +84,4 @@ export default {
 // Inspiration:
 // https://www.evozyne.com/
 // https://gagehotel.com/
+// https://dribbble.com/shots/15348169-Sisyphus-dashboard-sidebar-colour-variations
